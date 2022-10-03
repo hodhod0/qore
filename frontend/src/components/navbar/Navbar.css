@@ -1,0 +1,33 @@
+.container-navbar {
+  background-color: #63894a;
+  /* padding: 0 30px; */
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 25px;
+  align-items: center;
+  padding: 8px 0;
+}
+.title-navbar {
+  display: flex;
+  
+}
+
+.burger {
+  margin-right: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: large;
+  
+}
+.burger:hover{
+    background-color: var( --v-primary-darken1);
+}
+.title-logo{
+    color: white;
+}

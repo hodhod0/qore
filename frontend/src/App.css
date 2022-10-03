@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+:root {
+  --v-anchor-base: #63894a;
+  --v-primary-base: #63894a;
+  --v-primary-lighten5: #ebffcd;
+  --v-primary-lighten4: #cef7b1;
+  --v-primary-lighten3: #b3db96;
+  --v-primary-lighten2: #97bf7c;
+  --v-primary-lighten1: #7da362;
+  --v-primary-darken1: #4a6f32;
+  --v-primary-darken2: #32571b;
+  --v-primary-darken3: #193f03;
+  --v-primary-darken4: #092900;
+  --v-secondary-base: #2f5784;
+  --v-secondary-lighten5: #b8d9ff;
+  --v-secondary-lighten4: #9cbef2;
+  --v-secondary-lighten3: #80a3d5;
+  --v-secondary-lighten2: #6589b9;
+  --v-secondary-lighten1: #4b6f9e;
+  --v-secondary-darken1: #0d406b;
+  --v-secondary-darken2: #002a52;
+  --v-secondary-darken3: #00163b;
+  --v-secondary-darken4: #000026;
+  --v-accent-base: #424242;
+  --v-accent-lighten5: #c1c1c1;
+  --v-accent-lighten4: #a6a6a6;
+  --v-accent-lighten3: #8b8b8b;
+  --v-accent-lighten2: #727272;
+  --v-accent-lighten1: #595959;
+  --v-accent-darken1: #2c2c2c;
+  --v-accent-darken2: #171717;
+  --v-accent-darken3: #000000;
+  --v-accent-darken4: #000000;
+  --v-error-base: #ef5350;
+  --v-error-lighten5: #ffe2d2;
+  --v-error-lighten4: #ffc5b7;
+  --v-error-lighten3: #ffa89c;
+  --v-error-lighten2: #ff8c82;
+  --v-error-lighten1: #ff6f68;
+  --v-error-darken1: #cf3539;
+  --v-error-darken2: #b00d23;
+  --v-error-darken3: #91000e;
+  --v-error-darken4: #730000;
+  --v-info-base: #26a69a;
+  --v-info-lighten5: #c3ffff;
+  --v-info-lighten4: #a5ffff;
+  --v-info-lighten3: #87fbed;
+  --v-info-lighten2: #6aded0;
+  --v-info-lighten1: #4bc2b5;
+  --v-info-darken1: #008b80;
+  --v-info-darken2: #007167;
+  --v-info-darken3: #00584f;
+  --v-info-darken4: #004038;
+  --v-success-base: #00e676;
+  --v-success-lighten5: #ceffff;
+  --v-success-lighten4: #afffe4;
+  --v-success-lighten3: #8fffc8;
+  --v-success-lighten2: #6dffac;
+  --v-success-lighten1: #47ff91;
+  --v-success-darken1: #00c95c;
+  --v-success-darken2: #00ad43;
+  --v-success-darken3: #009129;
+  --v-success-darken4: #00760d;
+  --v-warning-base: #ffc107;
+  --v-warning-lighten5: #ffffae;
+  --v-warning-lighten4: #ffff91;
+  --v-warning-lighten3: #ffff74;
+  --v-warning-lighten2: #fff956;
+  --v-warning-lighten1: #ffdd37;
+  --v-warning-darken1: #e0a600;
+  --v-warning-darken2: #c18c00;
+  --v-warning-darken3: #a27300;
+  --v-warning-darken4: #855a00;
+  --v-brandLight-base: #b7c1cd;
+  --v-brandLight-lighten5: #ffffff;
+  --v-brandLight-lighten4: #ffffff;
+  --v-brandLight-lighten3: #ffffff;
+  --v-brandLight-lighten2: #eff9ff;
+  --v-brandLight-lighten1: #d3dde9;
+  --v-brandLight-darken1: #9ca6b2;
+  --v-brandLight-darken2: #828c97;
+  --v-brandLight-darken3: #69727d;
+  --v-brandLight-darken4: #505a64;
+  --v-brandDark-base: #495767;
+  --v-brandDark-lighten5: #cbdaed;
+  --v-brandDark-lighten4: #afbed0;
+  --v-brandDark-lighten3: #94a3b5;
+  --v-brandDark-lighten2: #7a899a;
+  --v-brandDark-lighten1: #616f80;
+  --v-brandDark-darken1: #32404f;
+  --v-brandDark-darken2: #1c2a38;
+  --v-brandDark-darken3: #051523;
+  --v-brandDark-darken4: #00000d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hod {
+  width: 23%;
+}
+.pages {
+    width: 100%;
+    overflow: auto;
+    height: 100vh;}
+
+@media only screen and (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+  .sidebar.show {
+    display: block;
+    position: fixed;
+    width: 200px;
+  }
+  .hod {
+    width: 0%;
+  }
+  .pages {
+    width: 100%;
+  }
+  .container {
+    max-width: 1022px !important;
+  }
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (min-width: 1024px) {
+  .burger {
+    display: none;
+    margin-right: 15px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (max-width: 920px) {
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media only screen and (max-width: 480px) {
+  .settings {
+    display: none;
+  }
+  .order-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .logout{
+    padding: 5px 25px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
-  }
+  .title-navbar {
+    display: flex;
+    align-items: center;
+}
+}
+a {
+  color: var(--v-anchor-base);
+  text-decoration: none;
+  width: 100%;
+  font-weight: 600;
+  font-size: large;
+}
+a:hover {
+  color: var(--v-anchor-base);
+  text-decoration: none;
+  background-color: var(--v-accent-lighten5);
+}
+li {
+  list-style: none;
 }
